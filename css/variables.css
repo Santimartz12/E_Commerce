@@ -1,7 +1,10 @@
-:root{
-    
+:root {
+
     --color_fondo: whitesmoke;
     --color_buscador: white;
+    --color_corporativo_claro: #4b96fa;
+    --color_corporativo_medio: #2a7ae4;
+    
 
-    --fuente_principal: "Montserrat" , sans-serif;
+    --fuente_principal: 'Montserrat', sans-serif;
 }

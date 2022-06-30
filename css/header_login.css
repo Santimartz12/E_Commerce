@@ -1,0 +1,38 @@
+.header{
+    background-color: var(--color_fondo);
+    width: 100%;
+}
+
+.header_container{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo{
+    width: 190px;
+    margin: 0 auto;
+}
+
+.header_back{
+    text-decoration: none;
+    margin: 0 40px;
+    position:absolute;
+    top: 30.725px
+}
+
+.header_back_icon{
+    height: 16px;
+}
+
+.header_back_elements{
+    display: flex;
+}
+
+.header_back_text{
+    color: black;
+    font-weight: 500;
+    margin: 0 10px;
+    font-family: var(--fuente_principal);
+}
