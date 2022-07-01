@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/header_login.css">
+    <link rel="stylesheet" href="../css/contacto_login.css">
     <link rel="stylesheet" href="../css/main_login.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <link rel="shortcut icon" href="../resources/Icons/AluraGeek.svg" type="image/x-icon">
     <title>AluraGeek - Login</title>
@@ -31,6 +33,7 @@
             </div>
         </a>
     </header>
+
     <main class="main">
         <div class="main_container">
             <img class="main_image" src="../resources/Images/imagen_login.jpg"
@@ -40,11 +43,49 @@
                 <input class="input_login" type="email" name="Email" id="Email" placeholder="Correo Electrónico">
                 <input class="input_login" type="password" name="Password" id="Password" placeholder="Contraseña">
                 <button class="main_login_boton">Entrar</button>
-                </div>
             </div>
         </div>
+
+        <section class="contacto_container">
+
+            <div class="contacto_image_container">
+                <img class="contacto_image" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+            </div>
+
+            <div class="contacto_menu">
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quienes somos</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Política de privacidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Programa de fidelidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Nuestras tiendas</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quiero ser franquiciado</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Anuncie aquí</p></a>                        
+            </div>
+
+            <form class="contacto_mensaje_container">
+                <h2 class="contacto_mensaje_titulo">Hable con nosotros</h2>
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Nombre">Nombre</label>
+                    <input class="contacto_input" type="text" id="Nombre">
+                </div>
+
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Mensaje">Escriba su mensaje</label>
+                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje"></textarea>
+                </div>
+
+                <button class="contacto_boton_enviar">Enviar Mensaje</button>
+
+            </form>
+
+        </section>
         
     </main>
+
+    <footer>
+        <p class="footer_info">Desarrollado por Santiago Martínez</p>
+        <p class="footer_info">2022</p>
+    </footer>
+
 </body>
 
 </html>

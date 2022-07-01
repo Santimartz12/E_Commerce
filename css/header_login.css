@@ -19,7 +19,13 @@
     text-decoration: none;
     margin: 0 40px;
     position:absolute;
-    top: 30.725px
+    top: 30.725px;
+    left: 0px;
+    transition: all 300ms;
+}
+
+.header_back:hover{
+    left: -5px;
 }
 
 .header_back_icon{
