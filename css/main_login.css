@@ -50,3 +50,16 @@
 .main_login_boton:hover{
 	background-color: var(--color_corporativo_medio);
 } 
+
+.main_register{
+    font-family: var(--fuente_principal);
+    font-size: 13px;
+    margin: 35px 0 0 0;
+    font-weight: 400;
+}
+
+.link_register{
+    text-decoration: none;
+    color: var(--color_corporativo_medio);
+
+}

@@ -4,13 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 
 .contacto_mensaje_container {
 	width: 400px;
 	display: flex;
 	flex-direction: column;
-	margin: 0 50px;
+	margin: 0 10px;
 }
 
 .contacto_mensaje_titulo{
@@ -19,11 +20,12 @@
     margin: 5px 0;
 }
 
-.contacto_menu{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.contacto_menu {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0 10px;
 }
 
 .contacto_input_container{
@@ -85,6 +87,7 @@
     align-items: flex-start;
 }
 
-.contacto_image{
-    height: 50px;
+.contacto_image {
+	height: 50px;
+	margin: 0 10px;
 }

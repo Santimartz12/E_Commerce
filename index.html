@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 
     <link rel="shortcut icon" href="./resources/Icons/AluraGeek.svg" type="image/x-icon">
     <title>AluraGeek - E-Commerce</title>
@@ -33,9 +34,52 @@
         </div>
     </header>
 
+    <main>
+
+
+
+    </main>
+
     <footer>
-        <p class="footer_info">Desarrollado por Santiago Martínez</p>
-        <p class="footer_info">2022</p>
+
+        <section class="contacto_container">
+
+            <div class="contacto_image_container">
+                <img class="contacto_image" src="./resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+            </div>
+
+            <div class="contacto_menu">
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quienes somos</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Política de privacidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Programa de fidelidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Nuestras tiendas</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quiero ser franquiciado</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Anuncie aquí</p></a>                        
+            </div>
+
+            <form class="contacto_mensaje_container">
+                <h2 class="contacto_mensaje_titulo">Hable con nosotros</h2>
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Nombre">Nombre</label>
+                    <input class="contacto_input" type="text" id="Nombre">
+                </div>
+
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Mensaje">Escriba su mensaje</label>
+                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje"></textarea>
+                </div>
+
+                <button class="contacto_boton_enviar">Enviar Mensaje</button>
+
+            </form>
+
+        </section>
+
+        <div class="footer__dev__info">
+            <p class="footer_info">Desarrollado por Santiago Martínez</p>
+            <p class="footer_info">2022</p>
+        </div>
+        
     </footer>
 </body>
 
