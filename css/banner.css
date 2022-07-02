@@ -1,0 +1,59 @@
+.banner{
+	width: 100%;
+	overflow:hidden;
+}
+.banner__slide{
+	width: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.banner__container{
+    width: 100vw;
+    height: 250px;
+}
+
+.banner__info{
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    padding: 50px 50px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner__titulo {
+	font-family: var(--fuente_principal);
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	margin: 5px 0;
+}
+
+.banner__descripcion {
+	font-family: var(--fuente_principal);
+	font-weight: 400;
+	color: white;
+	margin: 5px 0;
+}
+
+.banner__btn {
+	width: 160px;
+	margin: 5px 0px;
+	padding: 10px 0;
+	background-color: var(--color_corporativo_claro);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: var(--fuente_principal);
+	font-weight: 500;
+	transition: all 300ms;
+}
+
+.banner__btn:hover {
+	background-color: var(--color_corporativo_medio);
+}
+
+.banner-consolas{
+    background: url(../resources/Images/Banner/consolas.png) center / cover no-repeat;
+}
