@@ -6,7 +6,7 @@
 
 .main_image{
     height: calc(100vh - 77.45px);
-    max-height: 1080px;
+    max-height: 670px;
 }
 
 .main_login_container{
@@ -21,6 +21,10 @@
     font-weight: 600;
     font-size: 30px;
     margin: 10px 0;
+}
+
+.login_boton_link{
+    width: 100%;
 }
 
 .input_login {
@@ -62,4 +66,34 @@
     text-decoration: none;
     color: var(--color_corporativo_medio);
 
+}
+
+@media screen and (max-width:900px) {
+
+    .main_image {
+        display: none;
+    }   
+
+    .main_container {
+        display: flex;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .header_back_text {
+        display: none;
+    }
+
+    .header_back {
+        margin: 0 20px;
+        top: 26.7px;
+    }
+
+    .header_back_icon {
+        height: 25px;
+    }
+
+    .input_login {
+        width: 270px;
+    }
 }

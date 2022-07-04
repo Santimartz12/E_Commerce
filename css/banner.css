@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+	transition: all 300ms;
 }
 
 .banner__titulo {
@@ -28,6 +29,7 @@
 	font-weight: 600;
 	color: white;
 	margin: 5px 0;
+	transition: all 300ms;
 }
 
 .banner__descripcion {
@@ -35,6 +37,7 @@
 	font-weight: 400;
 	color: white;
 	margin: 5px 0;
+	transition: all 300ms;
 }
 
 .banner__btn {
@@ -56,4 +59,25 @@
 
 .banner-consolas{
     background: url(../resources/Images/Banner/consolas.png) center / cover no-repeat;
+}
+
+@media screen and (max-width: 500px){
+
+	.banner__container {
+		height: 230px;
+	}
+
+	.banner__info {
+		padding: 70px 0px 0px 20px;
+	}
+
+	.banner__titulo {
+		font-size: 28px;
+	}
+
+	.banner__descripcion {
+		font-size: 11px;
+		margin: 0 0 5px 0;
+	}
+
 }

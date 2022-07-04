@@ -1,0 +1,80 @@
+.agregar_producto_formulario {
+	width: 50%;
+	min-width: 370px;
+	margin: 40px 25%;
+}
+
+.agregar_producto_titulo{
+    font-family: var(--fuente_principal);
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.agregar__form {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color_fondo);
+	margin: 10px 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.agregar__info{
+    font-family: var(--fuente_principal);
+    font-weight: 500;
+    font-size: 13px;
+    margin: 5px;
+    color: rgb(99, 99, 99);
+}
+
+.agregar__precio{
+    align-items: center;
+    display: flex;
+}
+
+.divisa{
+    font-size: 16px;
+}
+
+.agregar__input {
+	background: none;
+	border: none;
+	outline-style: none;
+	font-weight: 500;
+	font-family: var(--fuente_principal);
+	font-size: 14px;
+	margin: 5px 5px;
+	resize: none;
+	width: 95%;
+}
+
+.agregar__btn {
+	background-color: var(--color_corporativo_claro);
+	font-family: var(--fuente_principal);
+	margin: 0 1.5%;
+	width: 97%;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	border-radius: 10px;
+    transition: all 300ms;
+}
+
+.agregar__btn:hover {
+	background-color: var(--color_corporativo_medio);
+}
+
+
+@media screen and (max-width:700px) {
+
+	.agregar_producto_formulario {
+		width: 80%;
+		min-width: 100px;
+		margin: 40px 10%;
+	}
+	
+}

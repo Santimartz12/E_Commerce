@@ -27,7 +27,7 @@
 	font-weight: 600;
 	font-size: 25px;
 	color: black;
-	margin: 5px 0 10px 10px;
+	margin: 5px 0 5px 10px;
 }
 
 .productos__more__link {
@@ -49,8 +49,6 @@
 .productos__more__icon{
     height: 15px;
 }
-
-
 
 .productos__lista {
 	display: flex;
@@ -93,4 +91,16 @@
 
 .productos__item__btn:hover{
     background-color: var(--color_corporativo_medio);
+}
+
+@media screen and (max-width:700px){
+    
+    .productos__container {
+        width: 90%;
+        padding: 20px 5px;
+    }
+    
+    .productos__item_img {
+        width: 140px;
+    }
 }

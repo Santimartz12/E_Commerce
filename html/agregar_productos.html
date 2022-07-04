@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/agregar_producto.css">
+
+    <link rel="shortcut icon" href="../resources/Icons/AluraGeek.svg" type="image/x-icon">
+    <title>AluraGeek - E-Commerce</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_elements">
+                <a class="header_link-home" href="./admin_page.html"><img class="header_logo"
+                        src="../resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
+            </div>
+            <a class="header_link-login" href="./admin_page.html"><button class="Header_Button-login">Menú
+                    Administrador</button></a>
+        </div>
+    </header>
+
+    <main>
+        <form class="agregar_producto_formulario">
+            <h2 class="agregar_producto_titulo">Agregar nuevo producto</h2>
+            <div class="agregar__form">
+                <label class="agregar__info" for="image">URL de imagen</label>
+                <input class="agregar__input" type="text" name="imagen" id="image">
+            </div>
+            <div class="agregar__form">
+                <label class="agregar__info" for="categoria">Categoria</label>
+                <input class="agregar__input" type="text" name="categoria" id="categoria">
+            </div>
+            <div class="agregar__form">
+                <label class="agregar__info" for="nombreProducto">Nombre del producto</label>
+                <input class="agregar__input" type="text" name="NombreProducto" id="nombreProducto">
+            </div>
+            <div class="agregar__form">
+                <label class="agregar__info" for="precioProducto">Precio del producto</label>
+                <div class="agregar__precio">
+                    <p class="agregar__info divisa">$</p>
+                    <input class="agregar__input" type="number" name="precioProducto" id="precioProducto">
+                </div>
+            </div>
+            <div class="agregar__form">
+                <label class="agregar__info" for="descripcion">Descripción del producto</label>
+                <textarea class="agregar__input" name="descripcion" id="descripcion" rows="5"></textarea>
+            </div>
+            <button class="agregar__btn">Agregar Producto</button>
+        </form>
+    </main>
+
+    <footer>
+
+        <section class="contacto_container">
+
+            <div class="contacto_image_container">
+                <img class="contacto_image" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+            </div>
+
+            <div class="contacto_menu">
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Quienes somos</p>
+                </a>
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Política de privacidad</p>
+                </a>
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Programa de fidelidad</p>
+                </a>
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Nuestras tiendas</p>
+                </a>
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Quiero ser franquiciado</p>
+                </a>
+                <a class="contacto_menu_link" href="#">
+                    <p class="contacto_menu_texto">Anuncie aquí</p>
+                </a>
+            </div>
+
+            <form class="contacto_mensaje_container">
+                <h2 class="contacto_mensaje_titulo">Hable con nosotros</h2>
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Nombre">Nombre</label>
+                    <input class="contacto_input" type="text" id="Nombre">
+                </div>
+
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Mensaje">Escriba su mensaje</label>
+                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje"></textarea>
+                </div>
+
+                <button class="contacto_boton_enviar">Enviar Mensaje</button>
+
+            </form>
+
+        </section>
+
+        <div class="footer__dev__info">
+            <p class="footer_info">Desarrollado por Santiago Martínez</p>
+            <p class="footer_info">2022</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

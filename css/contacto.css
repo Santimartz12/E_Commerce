@@ -11,7 +11,7 @@
 	width: 400px;
 	display: flex;
 	flex-direction: column;
-	margin: 0 10px;
+	margin: 0 20px;
 }
 
 .contacto_mensaje_titulo{
@@ -89,5 +89,50 @@
 
 .contacto_image {
 	height: 50px;
-	margin: 0 10px;
+	margin: 0 20px;
+}
+
+
+@media screen and (max-width: 820px) {
+    
+    .contacto_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 317px;
+    }
+
+    .contacto_mensaje_container {
+        width: 40%;
+    }
+
+    .contacto_menu {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .contacto_container {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .contacto_menu {
+        align-items: center;
+        margin: 20px;
+    }
+
+    .contacto_mensaje_container {
+        width: 70%;
+    }
+
+    .contacto_mensaje_titulo {
+        margin: 20px 0 10px 0;
+        text-align: center;
+    }
+
+    .contacto_boton_enviar {
+        width: 100%;
+    }
+
 }
