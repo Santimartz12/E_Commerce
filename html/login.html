@@ -57,7 +57,7 @@
         <section class="contacto_container">
 
             <div class="contacto_image_container">
-                <img class="contacto_image" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+                <img class="contacto_image" src="./resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
             </div>
 
             <div class="contacto_menu">
@@ -69,20 +69,20 @@
                 <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Anuncie aquí</p></a>                        
             </div>
 
-            <form class="contacto_mensaje_container">
+            <form class="contacto_mensaje_container" data-form-contacto>
                 <h2 class="contacto_mensaje_titulo">Hable con nosotros</h2>
                 <div class="contacto_input_container">
-                    <label class="contacto_info" for="Nombre">Nombre</label>
-                    <input class="contacto_input" type="text" id="Nombre">
+                    <label class="contacto_info" for="Nombre"  >Nombre</label>
+                    <input class="contacto_input" type="text" id="Nombre" data-mensaje-nombre required maxlength="40">
                 </div>
 
                 <div class="contacto_input_container">
-                    <label class="contacto_info" for="Mensaje">Escriba su mensaje</label>
-                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje"></textarea>
+                    <label class="contacto_info" for="Mensaje" >Escriba su mensaje</label>
+                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje" 
+                    data-mensaje-mensaje required maxlength="120"></textarea>
                 </div>
 
-                <button class="contacto_boton_enviar">Enviar Mensaje</button>
-
+                <button type="submit" class="contacto_boton_enviar" data-mensaje-btn>Enviar Mensaje</button>
             </form>
 
         </section>
@@ -93,6 +93,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/validacion__mensaje.js"></script>
 
 </body>
 
