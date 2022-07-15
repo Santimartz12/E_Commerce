@@ -1,0 +1,19 @@
+{
+  "name": "e_commerce",
+  "version": "1.0.0",
+  "description": "e-commerce alurageek",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santimartz12/E_Commerce.git"
+  },
+  "author": "Santiago Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santimartz12/E_Commerce/issues"
+  },
+  "homepage": "https://github.com/Santimartz12/E_Commerce#readme"
+}
