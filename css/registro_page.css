@@ -1,0 +1,36 @@
+.main{
+    background-color: var(--color_corporativo_fondo_claro);
+    height: calc(100vh - 77.45px - 81.2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ejemplo {
+	padding: 5px 15px;
+	background-color: var(--color_corporativo_claro_opacidad);
+	border-radius: 8px;
+	margin: 0 3px;
+}
+
+.info__registro{
+    color: var(--color_corporativo_oscuro);
+    font-size: 20px;
+    font-family: var(--fuente_principal);
+    margin: 5px;
+}
+
+.indicacion{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.muestra{
+    padding-bottom: 50px;
+}
+
+.muestra:last-child{
+    padding-bottom: 0px;
+}
