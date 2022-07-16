@@ -16,6 +16,17 @@ const mostrarProductosIndex = (seccion,clasificador) =>{
     })
 }
 
+//Se crea la funcion para mostrar productos en la respectiva seccion
+const mostrarProductosSeccion = (seccion,clasificador) =>{ 
+    //Se llama la funcion de lista productos
+    productosServicios.listaProductos().then((respuesta) => {
+        //Por medio de un forEach se recorren todos los objetos
+        respuesta.forEach((producto) => {
+            clasificar(seccion,producto,clasificador);
+        });
+    })
+}
+
 //Se crea esta funcion para clasificar los productos de acuerdo a su seccion
 const clasificar = (ubicacion,producto,clasificador) => {
     //Si la seccion del producto es igual al clasificador descrito anteriormente, se procede a crear el elemento
@@ -24,8 +35,17 @@ const clasificar = (ubicacion,producto,clasificador) => {
     }
 }
 
+//Se crea esta funcion para determinar el parametro que necesita el cliente
+const obtenerInformacion = (parametro) => {
+    const url = new URL (window.location)
+    const info = url.searchParams.get(parametro);
+    return info;
+}
+
 //Se exportan las funciones mediante un objeto
 export const funciones = {
+    mostrarProductosSeccion,
     mostrarProductosIndex,
     clasificar,
+    obtenerInformacion,
 }

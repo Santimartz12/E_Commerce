@@ -11,28 +11,31 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/contacto.css">
-    <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/seccionproductos.css">
 
-    <link rel="shortcut icon" href="./resources/Icons/AluraGeek.svg" type="image/x-icon">
-    <title>AluraGeek - E-Commerce</title>
+    <link rel="shortcut icon" href="../resources/Icons/AluraGeek.svg" type="image/x-icon">
+    <title>AluraGeek - Productos</title>
+
 </head>
 
 <body>
+
     <header class="header">
+
         <div class="header_container" data-container-header>
             <div class="header_elements">
-                <a class="header_link-home" href="./index.html"><img class="header_logo" src="./resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
+                <a class="header_link-home" href="../index.html"><img class="header_logo" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
                 <div class="header_search">
                     <input class="header_search-input" type="text" placeholder="¿Qué deseas buscar?"
                         id="Buscar_Productos">
                     <button class="header_search-button"><img class="header_search-icon"
-                            src="./resources/Icons/Search.svg" alt="Search"></button>
+                            src="../resources/Icons/Search.svg" alt="Search"></button>
                 </div>
             </div>
-            <a class="header_link-login" href="./html/login.html">
+            <a class="header_link-login" href="../html/login.html">
                 <button class="Header_Button-login" data-btn-login>Login</button>
             </a>
         </div>
@@ -41,69 +44,18 @@
     <main>
 
         <section class="banner">
-            <div class="banner__slide">
-                <div class="banner-consolas banner__container">
-                    <div class="banner__info">
-                        <h2 class="banner__titulo">Julio Promocional</h2>
-                        <p class="banner__descripcion">Productos selecionados con 33% de descuento</p>
-                        <a href="seccion_producto.html?id=Consolas"><button class="banner__btn">Ver consolas</button></a>
-                    </div>
-                </div>
-            </div>
+            <div class="banner__container" data-banner></div>
         </section>
 
-        <section class="productos">
+        <div class="back">
+            <a class="back__link" href="./index.html">
+                <p class="back__text">Volver</p>
+                <img class="img__back" src="./resources/Icons/back.svg">
+            </a>
+        </div>
 
-            <!-- Seccion Star Wars -->
-            <div class="productos__container">
-                
-                <div class="productos__header">
-                    <h2 class="productos__titulo">Star Wars</h2>
-                    <div class="productos__more">
-                        <a class="productos__more__link" href="seccion_producto.html?id=StarWars">Ver todo
-                            <img class="productos__more__icon" src="./resources/Icons/more.svg" alt="Icono Ver Mas">
-                        </a>
-                        
-                    </div>
-                </div>
-
-                <div class="productos__lista" data-productos-starwars></div>
-
-            </div>
-
-            <!-- Seccion Consolas -->
-            <div class="productos__container">
-                
-                <div class="productos__header">
-                    <h2 class="productos__titulo">Consolas</h2>
-                    <div class="productos__more">
-                        <a class="productos__more__link" href="seccion_producto.html?id=Consolas">Ver todo
-                            <img class="productos__more__icon" src="./resources/Icons/more.svg" alt="Icono Ver Mas">
-                        </a>
-                        
-                    </div>
-                </div>
-
-                <div class="productos__lista" data-productos-consolas></div>
-
-            </div>
-
-            <!-- Seccion Diversos -->
-            <div class="productos__container">
-                
-                <div class="productos__header">
-                    <h2 class="productos__titulo">Diversos</h2>
-                    <div class="productos__more">
-                        <a class="productos__more__link" href="seccion_producto.html?id=Diversos">Ver todo
-                            <img class="productos__more__icon" src="./resources/Icons/more.svg" alt="Icono Ver Mas">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="productos__lista" data-productos-diversos></div>
-                
-            </div>
-
+        <section class="productos__container">
+            <div class="productos__lista" data-espacio-productos></div>
         </section>
 
     </main>
@@ -149,11 +101,10 @@
         </div>
         
     </footer>
-
-    <script type="module" src="./js/aluraGeekUser.js"></script>
-    <script type="module" src="./js/productos.js"></script>
+    
+    <script type="module" src="./js/seccionProductos.js"></script>
     <script src="./js/validacion__mensaje.js"></script>
+    <script src="./js/aluraGeekUser.js"></script>
 
 </body>
-
 </html>

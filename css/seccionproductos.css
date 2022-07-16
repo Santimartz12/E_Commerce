@@ -1,0 +1,48 @@
+.banner__container{
+    padding: 100px 0;
+    background: url(../resources/Images/Banner/consolas.png) center / cover no-repeat;
+    margin-bottom: 50px;
+}
+
+.back {
+	width: 85%;
+	margin: 0 auto;
+    transition: all 300ms;
+}
+
+.back__link {
+    width: 100px;
+	margin-left: 10px;
+	display: flex;
+	text-decoration: none;
+    transition: all 300ms;
+}
+
+.back__link:hover {
+	margin-left: 3px;
+}
+
+.back__text{
+    font-family: var(--fuente_principal);
+    font-size: 14px;
+    margin-left: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.img__back{
+    order: -1;
+    height: 16px;
+}
+
+.consolas{
+    background: url(../resources/Images/Banner/bannerConsolas.webp) center / cover no-repeat;
+}
+
+.starwars{
+    background: url(../resources/Images/Banner/bannerStarWars.webp) center / cover no-repeat;
+}
+
+.diversos{
+    background: url(../resources/Images/Banner/bannerDiversos.webp) center / cover no-repeat;
+}
