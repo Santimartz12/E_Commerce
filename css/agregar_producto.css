@@ -29,6 +29,16 @@
     color: rgb(99, 99, 99);
 }
 
+.agregar__categoria {
+	background-color: var(--color_fondo);
+	border: none;
+	color: rgb(99, 99, 99);
+	font-family: var(--fuente_principal);
+	font-weight: 500;
+	font-size: 13px;
+	margin: 0 2px;
+}
+
 .agregar__precio{
     align-items: center;
     display: flex;
