@@ -27,6 +27,13 @@
     width: 100%;
 }
 
+.errores__items{
+    font-family: var(--fuente_principal);
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: red;
+}
+
 .input_login {
 	outline-style: none;
     font-family: var(--fuente_principal);
@@ -66,6 +73,10 @@
     text-decoration: none;
     color: var(--color_corporativo_medio);
 
+}
+
+.ocultar{
+    display: none;
 }
 
 @media screen and (max-width:900px) {

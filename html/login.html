@@ -42,9 +42,15 @@
                 alt="Imagen Presentacion">
             <div class="main_login_container">
                 <h2 class="main_login_titulo">Iniciar Sesión</h2>
-                <input class="input_login" type="email" name="Email" id="Email" placeholder="Correo Electrónico">
-                <input class="input_login" type="password" name="Password" id="Password" placeholder="Contraseña">
-                <a class="login_boton_link" href="./admin_page.html"><button class="main_login_boton">Entrar</button></a>
+                <form class="main_login_container" data-formulario-login>
+                    <input data-email class="input_login" type="email" name="Email" id="Email" placeholder="Correo Electrónico" required>
+                    <input data-password class="input_login" type="password" name="Password" id="Password" placeholder="Contraseña" required>
+                    <ul class="muestra__errores">
+                        <li data-error class="errores__items ocultar">La contraseña es incorrecta</li>
+                    </ul>
+                    <button type="submit" class="login_boton_link main_login_boton">Entrar</button>
+                </form>
+
                 <p class="main_register">¿Aún no te has registrado? <a class="link_register" href="./registro_page.html">Registrate aquí</a></p>
             </div>
         </div>  
@@ -94,6 +100,7 @@
 
     </footer>
 
+    <script src="../js/login/login.js"></script>
     <script src="../js/validacion__mensaje.js"></script>
 
 </body>
