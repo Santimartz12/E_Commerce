@@ -5,6 +5,6 @@ const consolasSection = document.querySelector("[data-productos-consolas]");
 const diversosSection = document.querySelector("[data-productos-diversos]");
 
 
-funciones.mostrarProductosIndex(starWarsSection,"Star Wars");
+funciones.mostrarProductosIndex(starWarsSection,"StarWars");
 funciones.mostrarProductosIndex(consolasSection,"Consolas");
 funciones.mostrarProductosIndex(diversosSection,"Diversos");

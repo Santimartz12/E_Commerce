@@ -25,45 +25,46 @@
     <header class="header">
         <div class="header_container">
             <div class="header_elements">
-                <a class="header_link-home" href="./admin_page.html"><img class="header_logo"
+                <a class="header_link-home" href="../admin_page.html"><img class="header_logo"
                         src="../resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
             </div>
-            <a class="header_link-login" href="./admin_page.html"><button class="Header_Button-login">Menú
+            <a class="header_link-login" href="../admin_page.html"><button class="Header_Button-login">Menú
                     Administrador</button></a>
         </div>
     </header>
 
     <main>
         <form class="agregar_producto_formulario">
-            <h2 class="agregar_producto_titulo">Agregar nuevo producto</h2>
+            <h2 class="agregar_producto_titulo">Agregar Producto</h2>
             <div class="agregar__form">
                 <label class="agregar__info" for="image">URL de imagen</label>
-                <input class="agregar__input" type="text" name="imagen" id="image">
+                <input data-img class="agregar__input" type="url" name="imagen" id="image" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|jpeg|png)" title="Agregue una URL que termine con .png, .jpeg o.jpg" required>
             </div>
+
             <div class="agregar__form">
                 <span class="agregar__info">Categoria</span>
-                <select class="agregar__categoria" name="categoria" id="categoria">
-                    <option value="Star Wars">Star Wars</option>
+                <select class="agregar__categoria" name="categoria" id="categoria" data-seccion required>
+                    <option value="StarWars">Star Wars</option>
                     <option value="Consolas">Consolas</option>
                     <option value="Diversos">Diversos</option>
                 </select>
             </div>
             <div class="agregar__form">
                 <label class="agregar__info" for="nombreProducto">Nombre del producto</label>
-                <input class="agregar__input" type="text" name="NombreProducto" id="nombreProducto">
+                <input class="agregar__input" type="text" name="NombreProducto" id="nombreProducto" data-nombre required maxlength="20">
             </div>
             <div class="agregar__form">
-                <label class="agregar__info" for="precioProducto">Precio del producto</label>
+                <label class="agregar__info" for="precioProducto">Precio del producto (Dolar Estadounidense)</label>
                 <div class="agregar__precio">
                     <p class="agregar__info divisa">$</p>
-                    <input class="agregar__input" type="number" name="precioProducto" id="precioProducto">
+                    <input class="agregar__input" type="number" name="precioProducto" id="precioProducto" data-precio step="0.01" required>
                 </div>
             </div>
             <div class="agregar__form">
                 <label class="agregar__info" for="descripcion">Descripción del producto</label>
-                <textarea class="agregar__input" name="descripcion" id="descripcion" rows="5"></textarea>
+                <textarea class="agregar__input" name="descripcion" id="descripcion" rows="5" data-descripcion required maxlength="150"></textarea>
             </div>
-            <button class="agregar__btn">Agregar Producto</button>
+            <button type="submit" class="agregar__btn">Agregar Producto</button>
         </form>
     </main>
 
@@ -72,7 +73,7 @@
         <section class="contacto_container">
 
             <div class="contacto_image_container">
-                <img class="contacto_image" src="./resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+                <img class="contacto_image" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
             </div>
 
             <div class="contacto_menu">
@@ -109,6 +110,9 @@
 
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script type="module" src="../js/agregarProductos.js"></script>
     <script src="../js/validacion__mensaje.js"></script>
 
 </body>

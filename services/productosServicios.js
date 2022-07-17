@@ -1,6 +1,3 @@
-import { funciones } from "../js/funciones.js";
-
-
 const crearNuevaLinea = (nombre,precio,image) => {
 
     //Se crea el formato para construir la informacion
@@ -24,7 +21,7 @@ const crearNuevaLinea = (nombre,precio,image) => {
         let loggedData = JSON.parse(sessionStorage.getItem("Login"))
         
         if(loggedData.logged == true){
-            window.location.href = "../html/admin_page.html"
+            window.location.href = "../admin_page.html"
         }
          else{
             window.location.href = "../html/login.html"
@@ -76,8 +73,19 @@ const eliminarProducto = (id) => {
     });
 }
 
+const crearProducto = (seccion,nombre,precio,image,descripcion) => {
+    return fetch("http://localhost:3000/productos", {
+        method: "POST",
+        headers:{
+            "Content-Type" : "application/json",
+        },
+        body: JSON.stringify({seccion: seccion,nombre:nombre,precio:precio,image:image,descripcion:descripcion,id: uuid.v4()})
+    })
+}
+
 export const productosServicios = {
     crearLineaAdmin,
     crearNuevaLinea,
     listaProductos,
+    crearProducto
 }
