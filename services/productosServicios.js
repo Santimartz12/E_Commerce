@@ -1,3 +1,6 @@
+import { funciones } from "../js/funciones.js";
+
+
 const crearNuevaLinea = (nombre,precio,image) => {
 
     //Se crea el formato para construir la informacion
@@ -10,12 +13,55 @@ const crearNuevaLinea = (nombre,precio,image) => {
     const contenido = `<img class="productos__item_img" src=${image} alt="Producto1">
     <h3 class="productos__item__titulo">${nombre}</h3>
     <p class="productos__item__precio">$${precio.toFixed(2)}</p>
-    <button class="productos__item__btn">Ver Producto</button>`;
+    <button class="productos__item__btn" data-btn-verProd>Ver Producto</button>`;
 
     //Se asigna el contenido a la linea
     linea.innerHTML = contenido;
 
+    const btnVerProd = linea.querySelector("[data-btn-verProd]")
+    btnVerProd.addEventListener("click", () => {
+
+        let loggedData = JSON.parse(sessionStorage.getItem("Login"))
+        
+        if(loggedData.logged == true){
+            window.location.href = "../html/admin_page.html"
+        }
+         else{
+            window.location.href = "../html/login.html"
+        }
+
+    })
+
     return linea
+}
+
+const crearLineaAdmin = (image,nombre,precio,id) => {
+
+    const container = document.querySelector("[data-container-productos]")
+
+    const div = document.createElement("div")
+    div.classList.add("productos__item");
+
+    const formato = `
+    <div class="productos__admin__tools">
+        <img class="productos__admin__delete" src="../resources/Icons/Delete.svg" alt="Eliminar title="Eliminar" data-eliminar id="${id}">
+        <img data-editar class="productos__admin__edit" src="../resources/Icons/Edit.svg" alt="Editar" title="Editar">
+    </div> 
+    <img class="productos__item_img" src=${image} alt="Producto1">
+    <h3 class="productos__item__titulo">${nombre}</h3>
+    <p class="productos__item__precio">$${precio.toFixed(2)}</p>`
+
+
+    div.innerHTML = formato;
+    container.appendChild(div);
+
+    const btnEliminar = div.querySelector("[data-eliminar]");
+    btnEliminar.addEventListener("click", () => {
+        eliminarProducto(btnEliminar.id).then( respuesta => {
+            console.log(respuesta)
+        }).catch(err => { alert("Ocurrio un error") });
+    } )
+
 }
 
 const listaProductos = ( ) => {
@@ -24,9 +70,14 @@ const listaProductos = ( ) => {
     })
 }
 
-
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`,{
+        method: "DELETE",
+    });
+}
 
 export const productosServicios = {
+    crearLineaAdmin,
     crearNuevaLinea,
     listaProductos,
 }

@@ -25,7 +25,7 @@ const comprobarlogin = (correo,password) => {
         sessionStorage.setItem("Login",JSON.stringify(loggedData))
 
         //Enviamos al usuario a la seccion del administrador
-        window.location.href = "../html/admin_page.html"
+        window.location.href = "../admin_page.html"
 
     }
     else{

@@ -32,7 +32,7 @@ if(loggedData.logged && loggedData.user == "admin" ){
     //Editamos el boton
     const botonlogin = document.querySelector("[data-btn-login]");
     const link = botonlogin.parentNode;
-    link.pathname = "./html/admin_page.html"
+    link.pathname = "./admin_page.html"
     botonlogin.textContent = "Modo Admin";
 
 }

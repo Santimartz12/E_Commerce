@@ -27,6 +27,15 @@ const mostrarProductosSeccion = (seccion,clasificador) =>{
     })
 }
 
+const mostrarProductos = () => {
+    productosServicios.listaProductos().then( respuesta => {
+        respuesta.forEach(({image,nombre,precio,id}) => {
+            productosServicios.crearLineaAdmin(image,nombre,precio,id);
+
+        })
+    }).catch((err) => {console.log(err)})
+}
+
 //Se crea esta funcion para clasificar los productos de acuerdo a su seccion
 const clasificar = (ubicacion,producto,clasificador) => {
     //Si la seccion del producto es igual al clasificador descrito anteriormente, se procede a crear el elemento
@@ -42,10 +51,13 @@ const obtenerInformacion = (parametro) => {
     return info;
 }
 
+
+
 //Se exportan las funciones mediante un objeto
 export const funciones = {
     mostrarProductosSeccion,
     mostrarProductosIndex,
+    mostrarProductos,
     clasificar,
     obtenerInformacion,
 }
