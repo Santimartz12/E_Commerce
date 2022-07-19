@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/verProducto.css">
+
+    <link rel="shortcut icon" href="../resources/Icons/AluraGeek.svg" type="image/x-icon">
+    <title>AluraGeek - Productos</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_container" data-container-header>
+            <div class="header_elements">
+                <a class="header_link-home" href="../index.html"><img class="header_logo" src="../resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
+            </div>
+            <a class="header_link-login" href="../html/login.html">
+                <button class="Header_Button-login" data-btn-login>Login</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="back">
+            <a class="back__link" href="./index.html">
+                <p class="back__text">Volver</p>
+                <img class="img__back" src="./resources/Icons/back.svg">
+            </a>
+        </div>
+
+        <section class="producto__container" data-container-producto></section>
+
+    </main>
+
+    <footer>
+
+        <section class="contacto_container">
+
+            <div class="contacto_image_container">
+                <img class="contacto_image" src="./resources/Logo/LogoAluraGeek.svg" alt="Logo Alura Geek">
+            </div>
+
+            <div class="contacto_menu">
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quienes somos</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Política de privacidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Programa de fidelidad</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Nuestras tiendas</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Quiero ser franquiciado</p></a>
+                <a class="contacto_menu_link" href="#"><p class="contacto_menu_texto">Anuncie aquí</p></a>                        
+            </div>
+
+            <form class="contacto_mensaje_container" data-form-contacto>
+                <h2 class="contacto_mensaje_titulo">Hable con nosotros</h2>
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Nombre"  >Nombre</label>
+                    <input class="contacto_input" type="text" id="Nombre" data-mensaje-nombre required maxlength="40">
+                </div>
+
+                <div class="contacto_input_container">
+                    <label class="contacto_info" for="Mensaje" >Escriba su mensaje</label>
+                    <textarea class="contacto_input input-mensaje" name="Mensaje" id="Mensaje" 
+                    data-mensaje-mensaje required maxlength="120"></textarea>
+                </div>
+
+                <button type="submit" class="contacto_boton_enviar" data-mensaje-btn>Enviar Mensaje</button>
+            </form>
+
+        </section>
+
+        <div class="footer__dev__info">
+            <p class="footer_info">Desarrollado por Santiago Martínez</p>
+            <p class="footer_info">2022</p>
+        </div>
+        
+    </footer>
+    
+    <script type="module" src="./js/verProducto.js"></script>
+    <script src="./js/validacion__mensaje.js"></script>
+    <script src="./js/aluraGeekUser.js"></script>
+
+</body>
+</html>

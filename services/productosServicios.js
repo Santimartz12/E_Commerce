@@ -1,4 +1,4 @@
-const crearNuevaLinea = (nombre,precio,image) => {
+const crearNuevaLinea = (nombre,precio,image,id) => {
 
     //Se crea el formato para construir la informacion
     const linea = document.createElement("div")
@@ -21,7 +21,7 @@ const crearNuevaLinea = (nombre,precio,image) => {
         let loggedData = JSON.parse(sessionStorage.getItem("Login"))
         
         if(loggedData.logged == true){
-            window.location.href = "../admin_page.html"
+            window.location.href = `./verProducto.html?id=${id}`
         }
          else{
             window.location.href = "../html/login.html"
@@ -64,6 +64,22 @@ const crearLineaAdmin = (image,nombre,precio,id) => {
         window.location.href = `../editarProducto.html?id=${id}`;
     } )
 
+}
+
+const crearLineaProductos = (padre,image,nombre,precio,descripcion) => {
+    const div = document.createElement("div");
+    div.classList.add("producto__detalle");
+
+    const formato = `
+    <img class="producto__img" src="${image}" alt="Imagen Producto">
+    <div class="producto__info">
+        <h2 class="producto__titulo" >${nombre}</h2>
+        <p class="producto__descripcion">${descripcion}</p>
+        <p class="producto__precio">$<span>${precio.toFixed(2)}</span></p>
+    </div>`
+
+    div.innerHTML = formato;
+    padre.appendChild(div);
 }
 
 const listaProductos = ( ) => {
@@ -110,5 +126,6 @@ export const productosServicios = {
     listaProductos,
     crearProducto,
     detalleProducto,
-    editarProducto
+    editarProducto,
+    crearLineaProductos
 }

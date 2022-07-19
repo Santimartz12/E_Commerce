@@ -40,7 +40,7 @@ const mostrarProductos = () => {
 const clasificar = (ubicacion,producto,clasificador) => {
     //Si la seccion del producto es igual al clasificador descrito anteriormente, se procede a crear el elemento
     if(producto.seccion == clasificador){
-        ubicacion.appendChild(productosServicios.crearNuevaLinea(producto.nombre,producto.precio,producto.image))
+        ubicacion.appendChild(productosServicios.crearNuevaLinea(producto.nombre,producto.precio,producto.image,producto.id))
     }
 }
 
