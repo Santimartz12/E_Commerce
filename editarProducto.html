@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/editar_producto.css">
+
+    <link rel="shortcut icon" href="../resources/Icons/AluraGeek.svg" type="image/x-icon">
+    <title>AluraGeek - E-Commerce</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_elements">
+                <a class="header_link-home" href="../admin_page.html"><img class="header_logo"
+                        src="../resources/Logo/LogoAluraGeek.svg" alt="Logo AluraGeek"></a>
+            </div>
+            <a class="header_link-login" href="../admin_page.html"><button class="Header_Button-login">Menú
+                    Administrador</button></a>
+        </div>
+    </header>
+
+    <main>
+
+        <form class="editar_producto_formulario" data-form-editar>
+            <h2 class="editar_producto_titulo">Editar Producto</h2>
+
+            <div class="contenedor__img">
+                <div class="editar__form" data-imagen>
+                    <p class="editar__info centrar-texto">Imagen actual</p>
+                </div>
+    
+                <div class="editar__form editar_url">
+                    <label class="editar__info" for="image">URL de imagen</label>
+                    <input data-img class="editar__input" type="text" name="imagen" id="image" title="Agregue una URL que termine con .png, .jpeg o.jpg" required>
+                </div>
+            </div>
+
+            <p data-error-img class="img__error ocultar">Por favor ingrese una URL que termine con .png, .jpeg o .jpg</p>
+
+            <div class="editar__form">
+                <span class="editar__info">Categoria</span>
+                <select class="editar__categoria" name="categoria" id="categoria" data-seccion required>
+                    <option value="StarWars">Star Wars</option>
+                    <option value="Consolas">Consolas</option>
+                    <option value="Diversos">Diversos</option>
+                </select>
+            </div>
+            <div class="editar__form">
+                <label class="editar__info" for="nombreProducto">Nombre del producto</label>
+                <input class="editar__input" type="text" name="NombreProducto" id="nombreProducto" required data-nombre maxlength="20">
+            </div>
+            <div class="editar__form">
+                <label class="editar__info" for="precioProducto">Precio del producto (Dolar Estadounidense)</label>
+                <div class="editar__precio">
+                    <p class="editar__info divisa">$</p>
+                    <input class="editar__input" type="number" name="precioProducto" id="precioProducto" data-precio step="0.01" required>
+                </div>
+            </div>
+            <div class="editar__form">
+                <label class="editar__info" for="descripcion">Descripción del producto</label>
+                <textarea class="editar__input" name="descripcion" id="descripcion" rows="5" required data-descripcion maxlength="150"></textarea>
+            </div>
+            <button type="submit" class="editar__btn">Editar Producto</button>
+        </form>
+    </main>
+    
+    <script type="module" src="./js/editarProductos.js"></script>
+
+</body>
+</html>

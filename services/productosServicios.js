@@ -59,6 +59,11 @@ const crearLineaAdmin = (image,nombre,precio,id) => {
         }).catch(err => { alert("Ocurrio un error") });
     } )
 
+    const btnEditar = div.querySelector("[data-editar]");
+    btnEditar.addEventListener("click", () => {
+        window.location.href = `../editarProducto.html?id=${id}`;
+    } )
+
 }
 
 const listaProductos = ( ) => {
@@ -83,9 +88,27 @@ const crearProducto = (seccion,nombre,precio,image,descripcion) => {
     })
 }
 
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`).then( respuesta => {
+        return respuesta.json();
+    })
+}
+
+const editarProducto = (id,seccion,nombre,precio,image,descripcion) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: "PUT",
+        headers:{
+            "Content-Type" : "application/json",
+        },
+        body: JSON.stringify({seccion: seccion,nombre:nombre,precio:precio,image:image,descripcion:descripcion})
+    })
+}
+
 export const productosServicios = {
     crearLineaAdmin,
     crearNuevaLinea,
     listaProductos,
-    crearProducto
+    crearProducto,
+    detalleProducto,
+    editarProducto
 }

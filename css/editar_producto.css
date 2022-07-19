@@ -1,0 +1,143 @@
+.editar__img{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.img__error{
+	font-family: var(--fuente_principal);
+	color: red;
+	text-align: center;
+	padding: 7px 0 0 0;
+	font-size: 14px;
+}
+
+.img__result {
+	width: 120px;
+	height: 120px;
+	border-radius: 5px;
+}
+
+.arrastar__img{
+	cursor: pointer;
+	width: 100%;
+	height: 80px;
+	background: url(../resources/Icons/image.svg) right no-repeat;
+	background-position-x: 97%;
+	background-size: 50px;
+	size: 40px;
+}
+
+.editar_producto_formulario {
+	width: 50%;
+	min-width: 370px;
+	margin: 40px 25%;
+}
+
+.editar_producto_titulo{
+    font-family: var(--fuente_principal);
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.editar__form {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color_fondo);
+	margin: 10px 5px 0 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.contenedor__img {
+	display: flex;
+	border-radius: 10px;
+}
+
+.editar_url{
+    width: 100%;
+}
+
+.editar__info{
+    font-family: var(--fuente_principal);
+    font-weight: 500;
+    font-size: 13px;
+    margin: 5px;
+    color: rgb(99, 99, 99);
+}
+
+.editar__categoria {
+	background-color: var(--color_fondo);
+	border: none;
+	color: rgb(99, 99, 99);
+	font-family: var(--fuente_principal);
+	font-weight: 500;
+	font-size: 13px;
+	margin: 0 2px;
+}
+
+.editar__precio{
+    align-items: center;
+    display: flex;
+}
+
+.divisa{
+    font-size: 16px;
+}
+
+.editar__input {
+	background: none;
+	border: none;
+	outline-style: none;
+	font-weight: 500;
+	font-family: var(--fuente_principal);
+	font-size: 14px;
+	margin: 5px 5px;
+	resize: none;
+	width: 95%;
+	height: 100%;
+}
+
+.editar__btn {
+	background-color: var(--color_corporativo_claro);
+	font-family: var(--fuente_principal);
+	margin: 10px 1.5%;
+	width: 97%;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	border-radius: 10px;
+    transition: all 300ms;
+}
+
+.editar__btn:hover {
+	background-color: var(--color_corporativo_medio);
+}
+
+.editar__file {
+	opacity: 100;
+	cursor: pointer;
+	height: 70px;
+	width: 100%;
+}
+
+.ocultar{
+	display: none;
+}
+
+@media screen and (max-width:700px) {
+
+	.editar_producto_formulario {
+		width: 80%;
+		min-width: 100px;
+		margin: 40px 10%;
+	}
+}
