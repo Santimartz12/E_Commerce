@@ -27,6 +27,27 @@ const mostrarProductosSeccion = (seccion,clasificador) =>{
     })
 }
 
+const mostrarProductosNombre = (ubicacion,clasificador,ubicacionCantidad) => {
+    productosServicios.listaProductos().then((respuesta) => {
+        respuesta.forEach(producto => {
+            if(producto.nombre.toLowerCase().includes(clasificador.toLowerCase())){
+                ubicacion.appendChild(productosServicios.crearNuevaLinea(producto.nombre,producto.precio,producto.image,producto.id))
+            }
+        })
+        if(ubicacion.childElementCount == 0){
+            ubicacionCantidad.textContent =`No se encontraron productos`
+        }
+        else{
+            if(ubicacion.childElementCount == 1){
+                ubicacionCantidad.textContent =`Se encontró ${ubicacion.childElementCount} producto:`
+            }
+            else{
+                ubicacionCantidad.textContent =`Se encontraron ${ubicacion.childElementCount} productos:`
+            }
+        }
+    })
+}
+
 const mostrarProductos = () => {
     productosServicios.listaProductos().then( respuesta => {
         respuesta.forEach(({image,nombre,precio,id}) => {
@@ -56,6 +77,7 @@ const obtenerInformacion = (parametro) => {
 //Se exportan las funciones mediante un objeto
 export const funciones = {
     mostrarProductosSeccion,
+    mostrarProductosNombre,
     mostrarProductosIndex,
     mostrarProductos,
     clasificar,

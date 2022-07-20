@@ -90,6 +90,10 @@
     transition: all 300ms;
 }
 
+.centrar{
+    justify-content: center;    
+}
+
 .productos__item__btn:hover{
     background-color: var(--color_corporativo_medio);
 }
