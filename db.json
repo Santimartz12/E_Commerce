@@ -2,26 +2,26 @@
   "productos": [
     {
       "seccion": "StarWars",
-      "nombre": "Producto DEF",
+      "nombre": "Kylo Ren Juguete",
       "precio": 100,
       "image": "./resources/Images/Productos/starwars2.png",
-      "descripcion": "Este producto está relacionado a Star Wars",
+      "descripcion": "¡Juguete del líder supremo Kylo Ren! Exclusivo de la popular película Star Wars: The Rise of Skywalker.",
       "id": "starwars2"
     },
     {
       "seccion": "StarWars",
-      "nombre": "Producto GHI",
-      "precio": 60,
+      "nombre": "Stormtrooper Juguete",
+      "precio": 80,
       "image": "./resources/Images/Productos/starwars3.png",
-      "descripcion": "Este producto está relacionado a Star Wars",
+      "descripcion": "Star Wars La Serie Negro Primer Orden Stormtrooper juguete 6\" Escala El último Jedi figura de acción coleccionable,",
       "id": "starwars3"
     },
     {
       "seccion": "StarWars",
-      "nombre": "Producto MNO",
+      "nombre": "Lego Dark Vader",
       "precio": 50,
       "image": "./resources/Images/Productos/starwars5.png",
-      "descripcion": "Este producto está relacionado a Star Wars",
+      "descripcion": "Set de piezas Lego - Dark Vader, disfruta creando el casco de este personaje caracteristico de Star Wars al estilo de Lego",
       "id": "starwars5"
     },
     {
@@ -29,120 +29,256 @@
       "nombre": "Baby Yoda",
       "precio": 60,
       "image": "./resources/Images/Productos/starwars1.png",
-      "descripcion": "Este producto está relacionado a Star Wars",
+      "descripcion": "¡Este juguete de felpa infantil de 11 pulgadas capturará los corazones de los fanáticos de Star Wars en todas partes!",
       "id": "starwars1"
     },
     {
       "seccion": "Consolas",
-      "nombre": "Producto PQR",
+      "nombre": "Nintendo One",
       "precio": 400,
       "image": "./resources/Images/Productos/consolas6.png",
-      "descripcion": "Este producto está relacionado a Consolas",
+      "descripcion": "Nintendo primera generacion, disfruta de los primeros juegos desde tu TV y vive cada aventura como si fuera la primera vez",
       "id": "consolas6"
     },
     {
       "seccion": "StarWars",
-      "nombre": "Producto PQR",
+      "nombre": "Yoda juguete",
       "precio": 40,
       "image": "./resources/Images/Productos/starwars6.png",
-      "descripcion": "Este producto está relacionado a StarWars",
+      "descripcion": "Juguete coleccionable de Yoda, personaje de Star Wars, 15cm de alto por 5cm de diametro. Ideal para coleccionar",
       "id": "starwars6"
     },
     {
       "seccion": "Consolas",
-      "nombre": "Producto ABC",
+      "nombre": "Control Xbox One",
       "precio": 60,
       "image": "./resources/Images/Productos/consolas1.png",
-      "descripcion": "Este producto está relacionado a Consolas",
+      "descripcion": "Este mando combina funciones revolucionarias mientras conserva precisión, comodidad y exactitud en cada movimiento.",
       "id": "consolas1"
     },
     {
       "seccion": "Consolas",
-      "nombre": "Producto DEF",
+      "nombre": "PlayStation 5",
       "precio": 600,
       "image": "./resources/Images/Productos/consolas2.png",
-      "descripcion": "Este producto está relacionado a Consolas",
+      "descripcion": "Con tu PS5 tendrás entretenimiento para todos los días. Tecnología creada para poner nuevos retos tanto a jugadores principiantes como a expertos",
       "id": "consolas2"
     },
     {
       "seccion": "Consolas",
-      "nombre": "Producto GHI",
+      "nombre": "GameBoy translucida",
       "precio": 72,
       "image": "./resources/Images/Productos/consolas3.png",
-      "descripcion": "Este producto está relacionado a Consolas",
+      "descripcion": "Consola Nintendo GameBoy color TRANSLUCIDO modelo CGB-001 y PANTALLA IPS Mejorada retroiluminada",
       "id": "consolas3"
     },
     {
       "seccion": "Consolas",
-      "nombre": "Producto JKL",
+      "nombre": "Nintendo Switch",
       "precio": 180,
       "image": "./resources/Images/Productos/consolas4.png",
-      "descripcion": "Este producto está relacionado a Consolas",
+      "descripcion": "La consola Nintendo Switch está diseñada para cualquier estilo de vida, transformándose rápidamente de una consola casera a una consola portátil.",
       "id": "consolas4"
     },
     {
-      "seccion": "Consolas",
-      "nombre": "Producto MNO",
-      "precio": 700,
-      "image": "./resources/Images/Productos/consolas5.png",
-      "descripcion": "Este producto está relacionado a Consolas",
-      "id": "consolas5"
-    },
-    {
       "seccion": "Diversos",
-      "nombre": "Producto ABC",
+      "nombre": "Figura Sonic",
       "precio": 60,
       "image": "./resources/Images/Productos/diversos1.png",
-      "descripcion": "Este producto está relacionado a Diversos",
+      "descripcion": "Figura coleccionable del famoso personaje Sonic, 15cm de altura y construido de porcelana",
       "id": "diversos1"
     },
     {
       "seccion": "Diversos",
-      "nombre": "Producto DEF",
+      "nombre": "Forro control Xbox",
       "precio": 60,
       "image": "./resources/Images/Productos/diversos2.png",
-      "descripcion": "Este producto está relacionado a Diversos",
+      "descripcion": "Forro protector para controles xbox, antideslizantes y con diseños personalizados",
       "id": "diversos2"
     },
     {
       "seccion": "Diversos",
-      "nombre": "Producto GHI",
-      "precio": 60,
+      "nombre": "Bandera logo Atari",
+      "precio": 30,
       "image": "./resources/Images/Productos/diversos3.png",
-      "descripcion": "Este producto está relacionado a Diversos",
+      "descripcion": "Bandera con logo de Atari, diseñada con materiales de alta calidad y un estampado fijo que no se deteriora con las lavadas",
       "id": "diversos3"
     },
     {
       "seccion": "Diversos",
-      "nombre": "Producto JKL",
+      "nombre": "Reloj estilo gamer",
       "precio": 60,
       "image": "./resources/Images/Productos/diversos4.png",
-      "descripcion": "Este producto está relacionado a Diversos",
+      "descripcion": "Alarma doble con modo de repetición. Despertador digital con alarmas duales que permiten configurar dos horas diferentes",
       "id": "diversos4"
     },
     {
       "seccion": "StarWars",
-      "nombre": "Producto JKL",
-      "precio": 80,
+      "nombre": "Mug Stormtrooper",
+      "precio": 20,
       "image": "./resources/Images/Productos/starwars4.png",
-      "descripcion": "Este producto está relacionado a StarWars",
+      "descripcion": "Disfruta de un delicioso café con un mug al estilo de Star Wars",
       "id": "starwars4"
     },
     {
       "seccion": "Diversos",
-      "nombre": "Producto MNO",
+      "nombre": "Gafas RV",
       "precio": 60,
       "image": "./resources/Images/Productos/diversos5.png",
-      "descripcion": "Este producto está relacionado a Diversos",
+      "descripcion": "Gafas de realidad virtual de alta calidad, Más conveniente con auriculares estéreo. Fabricado con material de alta calidad. ",
       "id": "diversos5"
     },
     {
-        "seccion": "Diversos",
-        "nombre": "Producto PQR",
-        "precio": 60.00,
-        "image": "./resources/Images/Productos/diversos6.png",
-        "descripcion": "Este producto está relacionado a Diversos",
-        "id": "diversos6"
+      "seccion": "Diversos",
+      "nombre": "Pikachu Peluche",
+      "precio": 60,
+      "image": "./resources/Images/Productos/diversos6.png",
+      "descripcion": "Hermoso peluche de Pikachu, 60cm de alto, fabricado con materiales importados de excelente calidad y relleno en algodón siliconado.",
+      "id": "diversos6"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "Xbox Serie X",
+      "precio": 800,
+      "image": "https://m.media-amazon.com/images/I/61JGKhqxHxL._SL1500_.jpg",
+      "descripcion": "Consola de nueva generación. Juegos de nueva generación. Embárcate en nuevas aventuras y vívelas como se merecen con la Xbox Series X",
+      "id": "9afac87e-d8ae-4f91-8bc4-ac8548f121c6"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "Llavero Stormtrooper",
+      "precio": 65,
+      "image": "https://animecristal.com/wp-content/uploads/2021/03/x_rkr39154.jpg",
+      "descripcion": "Lleva tus llaves en un increible llavero de Stormstrooper \n– Tamaño aprox. 4 x 1 x 4 cm\n– Material: Poliresina",
+      "id": "02008b0a-2722-4484-a44b-8f07953cf1ec"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Mug Rick Sanchez",
+      "precio": 22,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_845748-MCO44123683865_112020-O.jpg",
+      "descripcion": "Te presentamos el nuevo Mug de Rick And Morty\nAltura: 95 mm\nProfundidad: 95 mm\nAncho: 95 mm\nMateriales: Cerámica\n",
+      "id": "c2e603f4-8b7a-4cd1-ac7e-eceb0dd6ff65"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "Lámpara Death Star",
+      "precio": 85,
+      "image": "https://m.media-amazon.com/images/I/51417JmeBHL._AC_.jpg",
+      "descripcion": "+ Lamina: Diseño Publicado + Luz\n+ Base: Negro Solido\n+ Colores: 16 Colores diferentes\n+ Alimentación: Puerto Baterías AA",
+      "id": "b0ff876f-14f0-4564-b70c-c6966b046e6e"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "Sables de Luz",
+      "precio": 30,
+      "image": "https://www.mrjuegosdemesa.es/pics/2022/03/16/hengqiyuan-star-wars-sable-luz-mango-metal-desmontable-con-carga-usb-experiencia-real-duelo-sable-luz-ninos-adultos-sable-de-luz-juguete-regaloice-b-194049.jpg",
+      "descripcion": "Sable de luz LED con efectos especiales, Sonido sensible al movimiento y empuñadura plateada realista para accesorios de disfraz de Halloween",
+      "id": "592b3787-be17-4476-8e7e-df8cbe2d8234"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "Máscara Chewbacca",
+      "precio": 40,
+      "image": "https://casadeldisfraz.com/5464-home_default/mascara-de-chewbacca.jpg",
+      "descripcion": "Abrir la boca ligeramente para escuchar Chewbacca Roar.\nUtilizar correas para ajustar.\nIncluye máscara y instrucciones.",
+      "id": "6c373b12-11b4-4532-9cd8-e7e13ddfa721"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "FunkoPop Mandalorian",
+      "precio": 20,
+      "image": "https://www.tonica.la/__export/1600723899124/sites/debate/img/2020/09/21/the-mandalorian-funko-pops.jpg_423682103.jpg",
+      "descripcion": "Coleccionable estilizado mide 3 ¾ pulgadas de alto, perfecto para cualquier fan de The Mandalorian ",
+      "id": "08c89101-aac5-4e2d-af04-0490ff9f5834"
+    },
+    {
+      "seccion": "StarWars",
+      "nombre": "Poster Baby Yoda",
+      "precio": 15,
+      "image": "https://erikstore.com/38100-large_default/poster-star-wars-the-mandalorian-the-child-art.jpg",
+      "descripcion": "Decora tus paredes con este póster de Baby Yoda, The Mandalorian.\nImpreso en papel brillo de alta calidad.",
+      "id": "880b1178-6485-4d73-b198-314a129d843b"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Carro control remoto",
+      "precio": 300,
+      "image": "https://static.buscapromos.com/storage/2022/03/04121648/51QpL0i9aPL.jpg",
+      "descripcion": "Bateria Recargable\nControl Remoto\nCoche giratorio",
+      "id": "9c424fbc-ac67-4880-8347-53d4c8d0bc70"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Camiseta !False",
+      "precio": 30,
+      "image": "https://abvalpo.cl/img/Falso-es-gracioso-porque-es-verdad-t-shirt-programador_wp-upload-1/46724.jpeg",
+      "descripcion": "Divertida camiseta humorística para programadores",
+      "id": "b93e31d8-2d2e-402f-800d-2ad1645efac0"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Gorra Gamer",
+      "precio": 25,
+      "image": "https://ae01.alicdn.com/kf/Hd1ecc3259d9548d48b829a114de412d6z/Gorra-de-b-isbol-de-Gamer-para-hombre-gorro-de-b-isbol-con-estampado-I-pause.jpg",
+      "descripcion": "100 % Algodón\nCierre de Broche\nBordado blanco sobre tela negra\n100% algodón de alta calidad ",
+      "id": "22b9d40a-9efd-48b8-964a-4d24cd74945d"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Mug Gameboy",
+      "precio": 24,
+      "image": "https://m.media-amazon.com/images/I/71alMT8fYrL._AC_SL1500_.jpg",
+      "descripcion": "Cambia de color con el calor, multicolor, hecho de cerámica, ideal para regalar de cumpleaños",
+      "id": "d195dd35-50de-47a1-8b87-72371e876676"
+    },
+    {
+      "seccion": "Diversos",
+      "nombre": "Lampara Batiseñal",
+      "precio": 35,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_722012-MLA45243793977_032021-V.jpg",
+      "descripcion": "Lámpara con el símbolo del Caballero Oscuro: Batman. La base de la lámpara es de plástico ABS con luz led incorporada y una placa acrílica",
+      "id": "f7ed7f8a-8159-4adf-9c9f-32041d676611"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "Oculus Quest 2",
+      "precio": 300,
+      "image": "https://coabimportaciones.com/wp-content/uploads/2020/09/Gafas-de-realidad-virtual-Oculus-Quest-2-64gb_1.jpg",
+      "descripcion": "Advanced All-In-One Virtual Reality Headset — 128 GB ",
+      "id": "b0f72998-fc3a-46fb-bb02-eb497900da35"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "Control PS5",
+      "precio": 70,
+      "image": "https://m.media-amazon.com/images/I/61jRyJEPwRS._SL1500_.jpg",
+      "descripcion": "Da vida a los mundos de juego – Siente tus acciones en el juego y el entorno simulado a través de la respuesta táctil",
+      "id": "03a21422-578f-468f-a711-6e62f95748a8"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "Xbox One",
+      "precio": 900,
+      "image": "https://m.media-amazon.com/images/I/51tRCUOUN6L.jpg",
+      "descripcion": "Edición limitada: modelo PEGI, para uso en Latam. Xbox One S Limited Edition Minecraft - Incluye 1 mes de suscripción de Xbox Game Pass ",
+      "id": "0a5c92e0-85d1-4ed4-b438-2d2798544cfa"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "PlayStation 2",
+      "precio": 150,
+      "image": "https://m.media-amazon.com/images/I/41PGBPY97GL.jpg",
+      "descripcion": "El sistema Playstation 2 te permite jugar juegos originales de PS1, así como la gran selección de juegos de PS2 ",
+      "id": "fc3ab262-4c62-4296-98eb-d1e15d6eb5f9"
+    },
+    {
+      "seccion": "Consolas",
+      "nombre": "Xbox 360",
+      "precio": 250,
+      "image": "https://m.media-amazon.com/images/I/61oFqsoj9nL._SL1000_.jpg",
+      "descripcion": "Xbox 360 4GB Slim Console",
+      "id": "d1669e1a-ca53-4ac4-98c7-26d251e47f49"
     }
   ]
 }
