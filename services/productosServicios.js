@@ -23,8 +23,8 @@ const crearNuevaLinea = (nombre,precio,image,id) => {
         if(loggedData.logged == true){
             window.location.href = `./verProducto.html?id=${id}`
         }
-         else{
-            window.location.href = "../html/login.html"
+        else{
+            window.location.href = "./html/login.html"
         }
 
     })
@@ -41,8 +41,8 @@ const crearLineaAdmin = (image,nombre,precio,id) => {
 
     const formato = `
     <div class="productos__admin__tools">
-        <img class="productos__admin__delete" src="../resources/Icons/Delete.svg" alt="Eliminar title="Eliminar" data-eliminar id="${id}">
-        <img data-editar class="productos__admin__edit" src="../resources/Icons/Edit.svg" alt="Editar" title="Editar">
+        <img class="productos__admin__delete" src="./resources/Icons/Delete.svg" alt="Eliminar title="Eliminar" data-eliminar id="${id}">
+        <img data-editar class="productos__admin__edit" src="./resources/Icons/Edit.svg" alt="Editar" title="Editar">
     </div> 
     <img class="productos__item_img" src=${image} alt="Producto1">
     <h3 class="productos__item__titulo">${nombre}</h3>
