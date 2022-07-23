@@ -61,7 +61,7 @@ const crearLineaAdmin = (image,nombre,precio,id) => {
 
     const btnEditar = div.querySelector("[data-editar]");
     btnEditar.addEventListener("click", () => {
-        window.location.href = `../editarProducto.html?id=${id}`;
+        window.location.href = `./editarProducto.html?id=${id}`;
     } )
 
 }
