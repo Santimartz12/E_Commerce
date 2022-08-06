@@ -57,7 +57,7 @@ form.addEventListener("submit", (event) => {
     const descripcion = document.querySelector("[data-descripcion]").value;
 
     productosServicios.editarProducto(id,seccion,nombre,precio,image,descripcion).then(() => 
-    {window.location.href = "../admin_page.html"}).catch(err => {console.log(err)});
+    {window.location.href = "./admin_page.html"}).catch(err => {console.log(err)});
 
 } )
 
